@@ -1,41 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="620" height="1020" viewBox="0 0 620 1020" role="img" aria-labelledby="title description">
-  <title id="title">Illustrative Xteink X4-style agenda reader mockup</title>
-  <desc id="description">A neutral rounded e-ink reader frame with an inset September 19, 2026 static agenda screen. This is an illustrative mockup, not an official product image.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="930" viewBox="0 0 620 930" role="img" aria-labelledby="title description">
+  <title id="title">Illustrative space-black Xteink X4 Pro-style agenda reader mockup</title>
+  <desc id="description">A portrait space-black e-ink reader with a slim bezel, inset September 19, 2026 static agenda screen, one subtle Home button, and narrow side page-turn button details. This is an illustrative approximation, not official product artwork.</desc>
   <defs>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#222820" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.28"/>
     </filter>
     <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#e1e0da"/>
-      <stop offset="1" stop-color="#c8c7c0"/>
+      <stop offset="0" stop-color="#1b1e22"/>
+      <stop offset="0.52" stop-color="#0c0e11"/>
+      <stop offset="1" stop-color="#171a1e"/>
     </linearGradient>
     <linearGradient id="bezel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#b8b8b1"/>
-      <stop offset="1" stop-color="#a8a8a1"/>
+      <stop offset="0" stop-color="#0b0d10"/>
+      <stop offset="1" stop-color="#171a1e"/>
     </linearGradient>
   </defs>
-  <rect width="620" height="1020" fill="#f4f3ef"/>
-  <ellipse cx="310" cy="974" rx="174" ry="18" fill="#252b26" opacity="0.12"/>
+  <rect width="620" height="930" fill="#eeefed"/>
+  <ellipse cx="310" cy="876" rx="170" ry="16" fill="#000000" opacity="0.16"/>
   <g filter="url(#shadow)">
-    <rect x="105" y="38" width="410" height="910" rx="48" fill="url(#body)" stroke="#96968f" stroke-width="4"/>
-    <rect x="125" y="66" width="370" height="620" rx="31" fill="url(#bezel)" stroke="#8d8d86" stroke-width="2"/>
-    <rect x="140" y="114" width="340" height="553.333" rx="8" fill="#8a8a84" stroke="#6f706b" stroke-width="2"/>
-    <rect x="150" y="124" width="320" height="533.333" rx="3" fill="#fff"/>
-    <g transform="translate(150 124) scale(0.6666666667)">
+    <rect x="92" y="38" width="436" height="820" rx="42" fill="url(#body)" stroke="#30343a" stroke-width="3"/>
+    <rect x="112" y="62" width="396" height="650" rx="27" fill="url(#bezel)" stroke="#292d33" stroke-width="2"/>
+    <rect x="122" y="80" width="376" height="616" rx="7" fill="#050607" stroke="#464a50" stroke-width="1.5"/>
+    <rect x="130" y="88" width="360" height="600" rx="2" fill="#ffffff"/>
+    <g transform="translate(130 88) scale(0.75)">
 <rect width="480" height="800" fill="#ffffff"/><g fill="#111111" font-family="Arial, Helvetica, sans-serif"><text x="24" y="34" font-size="13" font-weight="bold" letter-spacing="2">DAILY AGENDA</text><text x="456" y="34" font-size="13" text-anchor="end">09 / 19</text><text x="24" y="76" font-size="38" font-weight="bold">SATURDAY</text><text x="24" y="101" font-size="17" letter-spacing="1">SEPTEMBER 19, 2026</text><line x1="24" y1="116" x2="456" y2="116" stroke="#111111" stroke-width="3"/><rect x="24" y="132" width="432" height="83" fill="#f2f2f2" stroke="#111111" stroke-width="2"/><text x="40" y="153" font-size="12" font-weight="bold" letter-spacing="1.5">TODAY&apos;S CALENDAR</text><text x="40" y="180" font-size="21" font-weight="bold">No calendar events</text><text x="40" y="200" font-size="13">Schedule is clear.</text><text x="24" y="245" font-size="13" font-weight="bold" letter-spacing="2">SCHEDULE</text><line x1="24" y1="256" x2="456" y2="256" stroke="#111111" stroke-width="2"/><text x="24" y="279" font-size="13" font-weight="bold">08:00</text><text x="112" y="280" font-size="13">Plan the day</text><line x1="24" y1="294" x2="456" y2="294" stroke="#b5b5b5"/><text x="24" y="310" font-size="13" font-weight="bold">09:00</text><text x="112" y="311" font-size="13">Deep work</text><line x1="24" y1="325" x2="456" y2="325" stroke="#b5b5b5"/><text x="24" y="341" font-size="13" font-weight="bold">10:30</text><text x="112" y="342" font-size="13">Break / walk</text><line x1="24" y1="356" x2="456" y2="356" stroke="#b5b5b5"/><text x="24" y="372" font-size="13" font-weight="bold">13:00</text><text x="112" y="373" font-size="13">Lunch / reset</text><line x1="24" y1="387" x2="456" y2="387" stroke="#b5b5b5"/><text x="24" y="403" font-size="13" font-weight="bold">14:00</text><text x="112" y="404" font-size="13">Project block</text><line x1="24" y1="418" x2="456" y2="418" stroke="#b5b5b5"/><text x="24" y="434" font-size="13" font-weight="bold">16:00</text><text x="112" y="435" font-size="13">Exercise</text><line x1="24" y1="449" x2="456" y2="449" stroke="#b5b5b5"/><text x="24" y="465" font-size="13" font-weight="bold">18:00</text><text x="112" y="466" font-size="13">Shutdown ritual</text><line x1="24" y1="525" x2="456" y2="525" stroke="#111111" stroke-width="2"/><text x="24" y="550" font-size="13" font-weight="bold" letter-spacing="1.5">MONTH CALENDAR</text><text x="456" y="550" font-size="13" font-weight="bold" text-anchor="end">SEPTEMBER 2026</text><text x="54.85714285714286" y="581" font-size="11" font-weight="bold" text-anchor="middle">SU</text><text x="116.57142857142858" y="581" font-size="11" font-weight="bold" text-anchor="middle">MO</text><text x="178.2857142857143" y="581" font-size="11" font-weight="bold" text-anchor="middle">TU</text><text x="240" y="581" font-size="11" font-weight="bold" text-anchor="middle">WE</text><text x="301.7142857142857" y="581" font-size="11" font-weight="bold" text-anchor="middle">TH</text><text x="363.4285714285714" y="581" font-size="11" font-weight="bold" text-anchor="middle">FR</text><text x="425.1428571428571" y="581" font-size="11" font-weight="bold" text-anchor="middle">SA</text><text x="178.2857142857143" y="608" font-size="13" text-anchor="middle">1</text><text x="240" y="608" font-size="13" text-anchor="middle">2</text><text x="301.7142857142857" y="608" font-size="13" text-anchor="middle">3</text><text x="363.4285714285714" y="608" font-size="13" text-anchor="middle">4</text><text x="425.1428571428571" y="608" font-size="13" text-anchor="middle">5</text><text x="54.85714285714286" y="634" font-size="13" text-anchor="middle">6</text><text x="116.57142857142858" y="634" font-size="13" text-anchor="middle">7</text><circle cx="116.57142857142858" cy="643" r="2.5" fill="#111111"/><text x="178.2857142857143" y="634" font-size="13" text-anchor="middle">8</text><text x="240" y="634" font-size="13" text-anchor="middle">9</text><text x="301.7142857142857" y="634" font-size="13" text-anchor="middle">10</text><text x="363.4285714285714" y="634" font-size="13" text-anchor="middle">11</text><text x="425.1428571428571" y="634" font-size="13" text-anchor="middle">12</text><text x="54.85714285714286" y="660" font-size="13" text-anchor="middle">13</text><text x="116.57142857142858" y="660" font-size="13" text-anchor="middle">14</text><text x="178.2857142857143" y="660" font-size="13" text-anchor="middle">15</text><text x="240" y="660" font-size="13" text-anchor="middle">16</text><text x="301.7142857142857" y="660" font-size="13" text-anchor="middle">17</text><text x="363.4285714285714" y="660" font-size="13" text-anchor="middle">18</text><rect x="412.1428571428571" y="644" width="26" height="23" fill="#f2f2f2" stroke="#111111" stroke-width="2"/><text x="425.1428571428571" y="660" font-size="13" text-anchor="middle">19</text><text x="54.85714285714286" y="686" font-size="13" text-anchor="middle">20</text><text x="116.57142857142858" y="686" font-size="13" text-anchor="middle">21</text><text x="178.2857142857143" y="686" font-size="13" text-anchor="middle">22</text><text x="240" y="686" font-size="13" text-anchor="middle">23</text><text x="301.7142857142857" y="686" font-size="13" text-anchor="middle">24</text><text x="363.4285714285714" y="686" font-size="13" text-anchor="middle">25</text><text x="425.1428571428571" y="686" font-size="13" text-anchor="middle">26</text><text x="54.85714285714286" y="712" font-size="13" text-anchor="middle">27</text><text x="116.57142857142858" y="712" font-size="13" text-anchor="middle">28</text><text x="178.2857142857143" y="712" font-size="13" text-anchor="middle">29</text><text x="240" y="712" font-size="13" text-anchor="middle">30</text><line x1="24" y1="755" x2="456" y2="755" stroke="#b5b5b5"/><text x="456" y="786" font-size="11" text-anchor="end">STATIC PLAN / LIVE CALENDAR</text></g>
     </g>
-    <path d="M151 124h318v533H151z" fill="none" stroke="#555650" stroke-width="1" opacity="0.38"/>
-    <rect x="125" y="704" width="370" height="196" rx="27" fill="#d0cfca" stroke="#a2a19b" stroke-width="2"/>
-    <circle cx="310" cy="748" r="7" fill="#96968f" stroke="#777871" stroke-width="2"/>
-    <circle cx="310" cy="748" r="2" fill="#d8d7d1"/>
-    <rect x="268" y="823" width="84" height="7" rx="3.5" fill="#aaa9a2"/>
-    <circle cx="278" cy="865" r="3" fill="#999991"/>
-    <circle cx="294" cy="865" r="3" fill="#999991"/>
-    <circle cx="310" cy="865" r="3" fill="#999991"/>
-    <circle cx="326" cy="865" r="3" fill="#999991"/>
-    <circle cx="342" cy="865" r="3" fill="#999991"/>
-    <path d="M112 185v168" stroke="#9c9c95" stroke-width="3" stroke-linecap="round"/>
-    <path d="M508 242v104" stroke="#9c9c95" stroke-width="3" stroke-linecap="round"/>
+    <path d="M131 89h358v598H131z" fill="none" stroke="#5e6268" stroke-width="1" opacity="0.65"/>
+    <circle cx="310" cy="766" r="9" fill="#111317" stroke="#555a61" stroke-width="1.5"/>
+    <circle cx="310" cy="766" r="3" fill="#2d3238"/>
+    <rect x="80" y="354" width="5" height="54" rx="2.5" fill="#2e3339" stroke="#4a4f56" stroke-width="1"/>
+    <rect x="535" y="354" width="5" height="54" rx="2.5" fill="#2e3339" stroke="#4a4f56" stroke-width="1"/>
   </g>
-  <text x="310" y="995" text-anchor="middle" fill="#686b65" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.6">ILLUSTRATIVE MOCKUP · NOT AN OFFICIAL PRODUCT IMAGE</text>
+  <text x="310" y="900" text-anchor="middle" fill="#777b80" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="1.4">ILLUSTRATIVE MOCKUP · NOT OFFICIAL PRODUCT ARTWORK</text>
 </svg>
