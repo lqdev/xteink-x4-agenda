@@ -3,10 +3,10 @@
 Generate a reusable, static daily agenda for the **Xteink X4 and X4 Pro**. The output is a portrait **480 × 800, uncompressed 24-bit BMP** designed for a sleep screen: date, schedule, today’s calendar events, and a small monthly calendar with event dots.
 
 <figure>
-  <a href="examples/daily-agenda-current/preview/daily-agenda-2026-09-19.png">
-    <img src="examples/daily-agenda-current/preview/daily-agenda-2026-09-19.png" alt="480 by 800 static Xteink X4 agenda for Saturday, September 19, 2026 with a daily schedule and monthly calendar event marker" width="240">
+  <a href="docs/device-preview.svg">
+    <img src="docs/device-preview.svg" alt="Illustrative Xteink X4 or X4 Pro-like e-ink reader mockup showing a 480 by 800 static agenda for Saturday, September 19, 2026 with a daily schedule and monthly calendar event marker" width="310">
   </a>
-  <figcaption>Example Xteink X4/X4 Pro 480 × 800 static sleep-screen agenda. <a href="examples/daily-agenda-current/preview/daily-agenda-2026-09-19.png">Open the full-size PNG</a>.</figcaption>
+  <figcaption>Illustrative Xteink X4/X4 Pro-like 480 × 800 static sleep-screen mockup, not an official product image. <a href="docs/device-preview.svg">Open the full-size SVG</a>.</figcaption>
 </figure>
 
 ## Try it without installing anything
