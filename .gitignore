@@ -1,0 +1,9 @@
+node_modules/
+.sleep/
+agenda-preview/
+!examples/**/.sleep/
+!examples/**/.sleep/*.bmp
+coverage/
+.DS_Store
+Thumbs.db
+*.log

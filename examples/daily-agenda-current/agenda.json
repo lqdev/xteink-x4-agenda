@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-19",
+  "calendar": {
+    "source": "examples/fixtures/usa.ics",
+    "includeRegional": false
+  },
+  "schedule": [
+    { "time": "08:00", "label": "Plan the day" },
+    { "time": "09:00", "label": "Deep work" },
+    { "time": "10:30", "label": "Break / walk" },
+    { "time": "13:00", "label": "Lunch / reset" },
+    { "time": "14:00", "label": "Project block" },
+    { "time": "16:00", "label": "Exercise" },
+    { "time": "18:00", "label": "Shutdown ritual" }
+  ],
+  "footer": "STATIC PLAN / LIVE CALENDAR",
+  "filename": "daily-agenda-2026-09-19"
+}

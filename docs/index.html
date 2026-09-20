@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create a static Xteink X4 or X4 Pro agenda sleep-screen BMP in your browser.">
+    <title>X4 Agenda — Make a sleep screen</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">XTEINK X4 / X4 PRO</p>
+        <h1>Make a calm daily agenda sleep screen.</h1>
+        <p class="lede">Choose a date, optionally add a calendar file, and download a ready-to-copy 480 × 800 BMP. Everything on this page runs in your browser.</p>
+      </header>
+
+      <section class="card" aria-labelledby="make-heading">
+        <h2 id="make-heading">Make your screen</h2>
+        <form id="agenda-form">
+          <label for="agenda-date">1. Pick the day</label>
+          <input id="agenda-date" name="date" type="date" required>
+
+          <label for="calendar-file">2. Add a calendar (optional)</label>
+          <input id="calendar-file" name="calendar-file" type="file" accept=".ics,text/calendar">
+          <p class="help">An <code>.ics</code> file is the standard calendar export format. It stays on this device.</p>
+
+          <details>
+            <summary>Advanced: try a calendar URL</summary>
+            <label for="calendar-url">Public ICS URL</label>
+            <input id="calendar-url" name="calendar-url" type="url" placeholder="https://example.com/calendar.ics">
+            <p class="help">Many calendar servers block browser requests with CORS. A downloaded file is more reliable and more private.</p>
+          </details>
+
+          <label for="include-regional">
+            <input id="include-regional" name="include-regional" type="checkbox">
+            Include regional events
+          </label>
+          <p class="help">By default, events marked outside USA or “(Regional Holiday)” are left out.</p>
+
+          <label for="daily-plan">3. Add your plan (optional)</label>
+          <textarea id="daily-plan" name="daily-plan" rows="5" placeholder="08:00 | Plan the day&#10;09:00 | Deep work&#10;13:00 | Lunch / reset"></textarea>
+          <p class="help">One line per item: <code>time | label</code>. The built-in plan is used when this is blank.</p>
+
+          <div class="actions">
+            <button type="submit">Generate preview</button>
+            <button id="download-button" type="button" class="secondary" disabled>Download BMP</button>
+          </div>
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="preview-section" aria-labelledby="preview-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">STATIC PREVIEW</p>
+            <h2 id="preview-heading">Your 480 × 800 screen</h2>
+          </div>
+          <span class="badge">No account · no server</span>
+        </div>
+        <div id="preview" class="preview-frame" aria-label="Agenda preview"></div>
+      </section>
+
+      <section class="card next-steps">
+        <h2>Ready to put it on the device?</h2>
+        <p>Copy the downloaded file to the X4’s SD card as <code>sleep.bmp</code> (or use the device’s documented <code>.sleep</code> folder workflow), then wake or refresh the screen.</p>
+        <a class="text-link" href="./guide.html">Read the friendly Start Here guide →</a>
+      </section>
+
+      <footer>
+        <p>Open source, local-first, and intentionally static. Read the guide for privacy, troubleshooting, and advanced customization.</p>
+      </footer>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

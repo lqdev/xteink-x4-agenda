@@ -1,0 +1,23 @@
+{
+  "name": "xteink-x4-agenda",
+  "version": "1.0.0",
+  "description": "A reusable 480x800 static agenda and calendar generator for Xteink X4 and X4 Pro sleep screens.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "x4-agenda": "./bin/x4-agenda.mjs"
+  },
+  "scripts": {
+    "generate": "node bin/x4-agenda.mjs agenda.json .sleep agenda-preview",
+    "generate:examples": "node scripts/generate-examples.mjs",
+    "prepare:site": "node scripts/sync-web-core.mjs",
+    "test": "node --test",
+    "check": "npm test && npm run prepare:site"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

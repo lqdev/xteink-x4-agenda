@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-26",
+  "calendar": {
+    "source": "examples/fixtures/usa.ics",
+    "includeRegional": false
+  },
+  "schedule": [
+    { "time": "09:00", "label": "Morning walk" },
+    { "time": "11:00", "label": "Cook / prep" },
+    { "time": "15:00", "label": "Dinner" }
+  ],
+  "footer": "STATIC PLAN / LIVE CALENDAR",
+  "filename": "thanksgiving-agenda"
+}

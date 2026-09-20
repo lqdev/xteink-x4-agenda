@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>X4 Agenda — Start Here</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="page-shell guide">
+      <p class="eyebrow">XTEINK X4 / X4 PRO</p>
+      <h1>Start Here</h1>
+      <p class="lede">Make a quiet daily agenda for your X4 sleep screen. Start with the <a href="./">browser generator</a>; this page explains what happens next.</p>
+
+      <section class="card">
+        <h2>1. Quick generation</h2>
+        <ol>
+          <li>Open the <a href="./">browser generator</a>.</li>
+          <li>Choose a date.</li>
+          <li>Optionally select an exported <code>.ics</code> calendar file.</li>
+          <li>Click <strong>Generate preview</strong>, review the date and month dots, then click <strong>Download BMP</strong>.</li>
+        </ol>
+        <p>The result is named like <code>daily-agenda-2026-09-19.bmp</code>. It is a static image, not an app.</p>
+      </section>
+
+      <section class="card">
+        <h2>2. SD card and sleep image setup</h2>
+        <ol>
+          <li>Insert the device’s microSD card and keep a backup of its current sleep image.</li>
+          <li>Copy the downloaded BMP to the location your firmware documents for the sleep image.</li>
+          <li>The common filename is <code>sleep.bmp</code>. The command-line tool also writes a <code>.sleep/</code> folder so outputs are easy to copy together.</li>
+          <li>Safely eject the card and wake or refresh the X4.</li>
+        </ol>
+        <p>The file must be <strong>480 × 800, portrait, uncompressed 24-bit BMP</strong>. Firmware builds differ, so follow your build’s exact filename or folder instructions when they differ from these common conventions.</p>
+      </section>
+
+      <section class="card">
+        <h2>3. Calendar files</h2>
+        <p>An <code>.ics</code> file is a portable calendar export. In Google Calendar, Outlook, Apple Calendar, and most other calendar apps, look for <strong>Export</strong>, <strong>Download</strong>, or <strong>Save calendar</strong>.</p>
+        <p>All-day events appear in the today box and schedule. Events anywhere in the selected month get a small dot. Regional events are excluded by default when their location is not <code>USA</code> or the summary contains <code>(Regional Holiday)</code>; turn on the regional option when needed.</p>
+        <details>
+          <summary>What about a calendar URL?</summary>
+          <p>The home page has an advanced URL field, but browser CORS rules may block it. Downloading the calendar as an <code>.ics</code> file is more reliable and keeps the data local.</p>
+        </details>
+      </section>
+
+      <section class="card">
+        <h2>4. AI-agent workflow</h2>
+        <p>This repository includes an Agent Skill at <code>.agents/skills/x4-agenda/SKILL.md</code>. An AI coding agent can use it when you ask for a dated X4 agenda, an ICS import, or output validation.</p>
+        <p>For example: “Make an X4 agenda for 2026-11-26 using <code>my-calendar.ics</code>, include only national events, and validate the BMP.” The agent should run the tests, preserve the 480 × 800 24-bit format, and show the preview. Never provide calendar credentials; use an exported file or sanitized fixture.</p>
+      </section>
+
+      <section class="card">
+        <h2>5. Troubleshooting</h2>
+        <details open>
+          <summary>The device rejects the image</summary>
+          <p>Use the generated BMP directly. Do not resave it in a photo editor. Check that it is 480 × 800 and 24-bit, and confirm whether your firmware expects <code>sleep.bmp</code>, a <code>.sleep/</code> folder, or another documented name.</p>
+        </details>
+        <details>
+          <summary>An event is missing</summary>
+          <p>Check the selected date and the exported file. Regional events are filtered unless enabled. Recurring events appear only when the calendar export expands them.</p>
+        </details>
+        <details>
+          <summary>The URL does not load</summary>
+          <p>This is usually CORS: the calendar server does not allow a browser page to read it. Download the <code>.ics</code> file instead.</p>
+        </details>
+        <details>
+          <summary>The downloaded file is hard to find</summary>
+          <p>Browser downloads go to the browser’s normal Downloads folder. The CLI writes BMPs to <code>.sleep/</code> and previews to <code>agenda-preview/</code>.</p>
+        </details>
+      </section>
+
+      <section class="card">
+        <h2>6. Privacy and limitations</h2>
+        <ul>
+          <li>Uploaded calendar text is processed locally in your browser. No account or server is required.</li>
+          <li>A URL is requested by your browser and follows that server’s privacy policy and CORS rules.</li>
+          <li>The screen is intentionally static: no checkboxes, note fields, touch controls, or live updates.</li>
+          <li>The current layout is compact and English-only; long labels are shortened to fit.</li>
+          <li>Review the preview when timezone data is missing from an ICS file.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>7. Advanced customization</h2>
+        <p>Technical users need Node.js 18 or newer:</p>
+        <pre><code>npm install
+npm run generate</code></pre>
+        <p>The CLI reads <code>agenda.json</code>, writes the device-ready BMP to <code>.sleep/</code>, and writes SVG/PNG previews to <code>agenda-preview/</code>. Use custom paths with:</p>
+        <pre><code>node bin/x4-agenda.mjs path/to/agenda.json output/.sleep output/preview</code></pre>
+        <p>Core layout logic is in <code>src/agenda-core.mjs</code>; BMP encoding is in <code>src/bmp.mjs</code>. Run <code>npm test</code> after changing either. Recreate the representative fixtures with <code>npm run generate:examples</code>.</p>
+      </section>
+
+      <p><a class="text-link" href="./">← Back to the generator</a></p>
+    </main>
+  </body>
+</html>
