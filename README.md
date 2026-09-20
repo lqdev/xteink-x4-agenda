@@ -2,6 +2,13 @@
 
 Generate a reusable, static daily agenda for the **Xteink X4 and X4 Pro**. The output is a portrait **480 × 800, uncompressed 24-bit BMP** designed for a sleep screen: date, schedule, today’s calendar events, and a small monthly calendar with event dots.
 
+<figure>
+  <a href="examples/daily-agenda-current/preview/daily-agenda-2026-09-19.png">
+    <img src="examples/daily-agenda-current/preview/daily-agenda-2026-09-19.png" alt="480 by 800 static Xteink X4 agenda for Saturday, September 19, 2026 with a daily schedule and monthly calendar event marker" width="240">
+  </a>
+  <figcaption>Example Xteink X4/X4 Pro 480 × 800 static sleep-screen agenda. <a href="examples/daily-agenda-current/preview/daily-agenda-2026-09-19.png">Open the full-size PNG</a>.</figcaption>
+</figure>
+
 ## Try it without installing anything
 
 Open the [browser generator](docs/index.html) from GitHub Pages (or serve `docs/` as a static folder). Pick a date, optionally select a local `.ics` export, preview the screen, and download the BMP. Calendar data stays in the browser; no account or server is required. The URL field is advanced because browser CORS rules may block remote calendars.
